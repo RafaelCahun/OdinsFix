@@ -130,5 +130,7 @@ include "footer.php"
 ?>
    <!-- Versión Funcional del Proyecto Guardada en GitHub el dia: / 18 de Octubre del 2022 -->
    <!-- Prueba Git N#2 -->
+	
+   <!-- Prueba desde GitHub N#1 -->
 </body>
 </html>

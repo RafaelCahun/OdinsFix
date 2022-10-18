@@ -28,7 +28,7 @@
    <p>Creado por <span> Rafael Cahún</span> | Programación Web - 7SB</p>
 </div>
 
-<!-- Prueba de Rama TESTS en  / Git -->
+<!-- Prueba de Rama TESTS #1 en  / Git -->
 
 </body>
 </html>

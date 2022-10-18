@@ -1,0 +1,1092 @@
+/* FUENTE IMPORTADA */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+/* COLORES USADOS */
+:root {
+  --red:#fa4f09;
+  --black:#333;
+  --white:#fff;
+  --light-color:#666;
+  --light-bg:#eee;
+  --red2:red;
+}
+/* APLICADO A TODO EL DOCUMENTO */
+
+* {
+  
+   font-family: 'Poppins', sans-serif;
+   margin: 0;
+   padding: 0;
+   /* Borde y estilo de caja */
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+
+  /* Sin contorno por default */
+   outline: none;
+
+   /* Sin borde por default */
+   border: none;
+   text-decoration: none;
+   /* text-transform: capitalize; */
+
+   /* Animacion de transición */
+   -webkit-transition: all .2s linear;
+   transition: all .2s linear;
+ }
+
+ html {
+   font-size: 62.5%;
+   /* visibilidad del contenido  */
+   overflow-x: hidden;
+   /* comportamiento de desplazamiento */
+   scroll-behavior: smooth;
+   scroll-padding-top: 8rem;
+ }
+
+  /* Animacion de scroll / INICIO */
+ 
+ html::-webkit-scrollbar {
+   width: 1rem;
+ }
+ 
+ html::-webkit-scrollbar-track {
+   background: transparent;
+ }
+ 
+ html::-webkit-scrollbar-thumb {
+   background: var(--red);
+   border-radius: 5rem;
+ }
+  /* Animacion de scroll / FIN */
+ 
+ body {
+   background: var(--white);
+ }
+
+/* QUITAR FLECHITAS EN LOS INPUT CON NUMEROS */
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+ /* ELEMENTOS QUE SE REUTILIZAN */
+
+ .btn {
+   display: inline-block;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   background: var(--light-bg);
+   cursor: pointer;
+   color: var(--black);
+   padding: 1rem 3rem;
+   font-size: 1.7rem;
+ }
+ 
+ .btn:hover {
+   background: var(--red);
+   color: #fff;
+ }
+ 
+ .heading {
+   text-align: center;
+   margin-bottom: 3rem;
+   font-size: 4rem;
+   color: var(--black);
+ }
+ 
+ .heading span {
+   color: var(--red);
+ }
+
+ /* FIN */
+
+ /* HEADER / INICIO */
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--light-bg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 9%;
+  box-shadow: 0px 0px 4px 1px var(--light-color);
+}
+
+.header .logo {
+  margin-right: auto;
+  color: var(--black);
+  font-size: 2.5rem;
+}
+
+.header .logo img {
+   vertical-align: middle;
+}
+
+.header .fecha{
+   padding-right: 100px;
+}
+
+.header .fecha form{
+  /* border: 1px red solid; */
+  display: inline-block;
+  font-size: 14px;
+  color: var(--red);
+}
+
+.header .clock{
+  /* border: 1px red solid; */
+  width: 240px;
+  background-color: var(--light-bg);
+  /* border: 1px red solid; */
+}
+.header .reloj{
+   vertical-align: middle;
+   margin-bottom: 5px;
+   margin-right: 5px;
+}
+
+.header .navbar .sesion{
+   color: var(--white);
+   background-color: var(--red);
+   border-radius: 1.5rem;
+   padding: .7rem 1.5rem;
+}
+
+.header .navbar .sesion:hover{
+   color: var(--white);
+   background-color: var(--black);
+}
+
+
+.header .navbar a {
+  margin-right: 2rem;
+  font-size: 1.7rem;
+  color: var(--light-color);
+}
+
+
+.header .navbar a:hover {
+  color: var(--red);
+}
+
+.header .scroll-indicator {
+  position: absolute;
+  top: 99%;
+  left: 0;
+  height: 1rem;
+  background: var(--red);
+}
+
+
+/* FOOTER / INICIO */
+
+
+
+.footer {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000;
+   background: var(--black);
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   padding: 2rem 9%;
+ }
+ 
+ .footer .logo {
+   margin-right: auto;
+   color: var(--white);
+   font-size: 2.5rem;
+ }
+ 
+ .footer .logo img {
+    vertical-align: middle;
+ }
+ 
+ .footer .navbar a {
+   margin-right: 2rem;
+   font-size: 1.7rem;
+   color: var(--white);
+ }
+ 
+ .footer .navbar a:hover {
+   color: var(--red);
+ }
+ 
+ .footer .scroll-indicator {
+   position: absolute;
+   top: 99%;
+   left: 0;
+   height: 1rem;
+   background: var(--red);
+ }
+   /* CREDITOS INICIO */
+
+   .creditos {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: var(--light-bg);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 2rem 9%;
+    }
+
+    .creditos p{
+       font-size: 14px;
+    }
+    .creditos span{
+       color: var(--red);
+       font-weight: bold;
+    }
+
+    /* CREDITOS FIN */
+
+/* FOOTER / FIN */
+
+/* INDEX INICIO */
+
+/* INICIO / COMIENZO */
+.inicio div{
+   padding: 0.5rem 2%;
+ }
+
+.inicio .box {
+   min-height: 40vh;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+   gap: 1rem;
+ }
+ 
+ .inicio .box:nth-child(2) {
+   /* los elementos se colocan en varias líneas si no caben en una sola línea */
+   -ms-flex-wrap: wrap-reverse;
+       flex-wrap: wrap-reverse;
+   padding: 4rem 0;
+ }
+ 
+ .inicio .box .image {
+   -webkit-box-flex: 1;
+       -ms-flex: 1 1 42rem;
+           flex: 1 1 42rem;
+ }
+ 
+ .inicio .box .image img {
+   width: 95%;
+   border-radius: 1rem;
+ }
+ 
+ .inicio .box .content {
+   -webkit-box-flex: 1;
+       -ms-flex: 1 1 42rem;
+           flex: 1 1 42rem;
+           padding-left: 60px;
+ }
+ 
+ .inicio .box .content h3 {
+   font-size: 3rem;
+   color: var(--black);
+ }
+ 
+ .inicio .box .content p {
+   font-size: 1.5rem;
+   color: var(--light-color);
+   padding: 1rem 0;
+   line-height: 2;
+ }
+/* INICIO / FIN */
+
+/* INDEX FIN */
+
+
+/* SERVICIOS / INICIA */
+
+.services{
+   padding: 1rem 4%;
+   margin-top: 100px;
+   margin-bottom: 160px;
+   /* margin-bottom: 100px; */
+}
+
+.services .box-container {
+   display: -ms-grid;
+   /* UNA SOLA COLUMNA */
+   display: grid;
+   -ms-grid-columns: (minmax(20rem, 1fr));
+       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+   gap: 2rem;
+ }
+
+ .services .box-container .box {
+   text-align: center;
+   padding: 2rem;
+   background: var(--light-bg);
+   border-radius: .5rem;
+ }
+ 
+ .services .box-container .box img {
+   margin-bottom: .5rem;
+ }
+ 
+ .services .box-container .box h3 {
+   padding: 1rem 0;
+   font-size: 2rem;
+   color: var(--black);
+ }
+ 
+ .services .box-container .box p {
+   font-size: 1.4rem;
+   color: var(--light-color);
+   line-height: 2;
+ }
+
+/* SERVICIOS / FIN */
+
+
+/* NUESTRO TRABAJO / INICIA */
+.work div{
+   padding: 0.5rem 2%;
+ }
+.work .box-container {
+   -webkit-columns: 3 25rem;
+           columns: 3 25rem;
+   gap: 2rem;
+ }
+ 
+ .work .box-container img {
+   margin-bottom: 2rem;
+   width: 100%;
+   border-radius: 1rem;
+ }
+
+ .work .box-container iframe{
+   border-radius: 1rem;
+   width: 100%;
+ }
+
+/* NUESTRO TRABAJO / FIN */
+
+
+/* PRECIOS / INICIA */
+
+.pricing{
+   /* border: 1px red solid; */
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.pricing .box-container {
+   display: -ms-grid;
+   display: grid;
+   -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+       grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+   gap: 2rem;
+ }
+ 
+ .pricing .box-container .box {
+   text-align: center;
+   padding: 3rem 2rem;
+ }
+ 
+ .pricing .box-container .box:nth-child(2) {
+   background: var(--light-bg);
+   border-radius: .5rem;
+ }
+ 
+
+ .pricing .box-container .box h3 {
+   display: inline-block;
+   padding: .5rem 1.5rem;
+   font-weight: normal;
+   font-size: 2rem;
+   background: var(--red);
+   color: #fff;
+   border-radius: .5rem;
+   margin-bottom: 1rem;
+ }
+ 
+ .pricing .box-container .box .price {
+   font-size: 5rem;
+   font-weight: bolder;
+   color: var(--black);
+ }
+ 
+ .pricing .box-container .box .price span {
+   font-size: 3rem;
+ }
+ 
+ .pricing .box-container .box ul {
+   padding: 1rem 0;
+   list-style: none;
+ }
+ 
+ .pricing .box-container .box ul li {
+   padding: 1rem 0;
+   font-size: 1.5rem;
+   color: var(--light-color);
+   /* border: 1px red solid; */
+ }
+
+ .pricing .box-container .box .bold{
+    font-weight: bold;
+ }
+
+ .pricing .box-container .box .left{
+    text-align: left;
+    padding-left: 84px;
+ }
+ 
+ .pricing .box-container .box ul li i {
+   padding-right: .5rem;
+   color: var(--red);
+ }
+
+
+.pricing .table{
+  /* border: 1px red solid; */
+  margin: auto;
+  background-color: var(--light-bg);
+  padding: 20px 20px;
+  border-radius: 5px;
+}
+
+.pricing .table span{
+  font-weight: bold;
+  color: var(--red);
+}
+
+.pricing .table .campo1{
+  color: var(--red);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 30px;
+  /* border: 1px red solid; */
+}
+
+.pricing .table .campo2{
+  color: var(--black);
+  font-size: 15px;
+  padding: 5px 30px;
+}
+
+.pricing table td{
+  border-radius: 3px;
+  text-align: center;
+  background-color: var(--white);
+}
+
+.pricing table img{
+  width: 120px;
+}
+
+
+/* PRECIOS / FIN */
+
+/* COTIZACION / INICIO */
+
+.contact{
+   /* border: 1px red solid; */
+   /* margin-top: 50px;
+   margin-bottom: 50px; */
+   padding: 0.5rem 5%;
+}
+
+
+
+.contact .row {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+   gap: 2rem;
+ }
+ 
+ .contact .row .box-container {
+   width: 35rem;
+ }
+ 
+ .contact .row .box-container .box {
+   background: var(--light-bg);
+   border-radius: .5rem;
+   padding: 2rem;
+ }
+ 
+ .contact .row .box-container .box:first-child {
+   margin-bottom: 2rem;
+ }
+ 
+ .contact .row .box-container .box h3 {
+   font-size: 2rem;
+   color: var(--black);
+   padding-bottom: 1rem;
+ }
+ 
+ .contact .row .box-container .box p {
+   font-size: 1.5rem;
+   color: var(--light-color);
+   padding-top: 1.5rem;
+ }
+ 
+ .contact .row .box-container .box p span {
+   color: var(--red);
+   padding-right: .5rem;
+ }
+ 
+ .contact .row form {
+   -webkit-box-flex: 1;
+       -ms-flex: 1 1 42rem;
+           flex: 1 1 42rem;
+   background: var(--light-bg);
+   padding: 2rem;
+   border-radius: .5rem;
+ }
+ 
+ .contact .row form h3 {
+   font-size: 2.5rem;
+   margin-bottom: 1rem;
+   color: var(--black);
+ }
+ 
+ .contact .row form .input-box {
+   background: var(--white);
+   width: 100%;
+   margin: .7rem 0;
+   border-radius: .5rem;
+   font-size: 1.6rem;
+   padding: 1.2rem 1.4rem;
+   text-transform: none;
+   color: var(--light-color);
+ }
+ 
+ .contact .row form textarea {
+   height: 24rem;
+   resize: none;
+ }
+ 
+ .contact .row form .btn {
+   background: var(--red);
+   color: #fff;
+ }
+ 
+ .contact .row form .btn:hover {
+   opacity: .8;
+ }
+
+ .contact .problema{
+   color: var(--red);
+   font-size: 13px;
+ }
+
+ .contact .iconos{
+   vertical-align: middle;
+   margin-bottom: 4px;
+   margin-right: 5px;
+ }
+ /* COTIZACION / FIN */
+
+
+
+/* CORREO / INCIO */
+
+.newsletter{
+  padding: 0.5rem 2%;
+  height: 300px;
+}
+.newsletter {
+  background: var(--red);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newsletter .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+          margin-left: 50px;
+}
+
+.newsletter .content h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: .5rem;
+}
+
+.newsletter .content p {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.newsletter form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+  background: var(--light-bg);
+  border-radius: .5rem;
+  padding: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: grid;
+}
+
+.newsletter form .email {
+  width: 100%;
+  padding: 0 1.4rem;
+  font-size: 1.6rem;
+  text-transform: none;
+}
+
+.newsletter form input[type=text]{
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.newsletter form textarea{
+  border-radius: 5px;
+  padding: 40px 20px;
+  font-size: 1.6rem;
+  resize: none;
+}
+
+.newsletter form .btn {
+  margin-top: 0;
+  background: #333;
+  color: #fff;
+}
+
+.newsletter form .btn:hover {
+  background: var(--light-color);
+}
+
+
+
+
+/* CORREO / FIN */
+
+
+/* SESION .PHP / INICIA */
+
+.sesion{
+  padding: 0.5rem 2%;
+  height: 3;
+  margin-top: 50px;
+  margin-bottom: 55px;
+  
+}
+
+.sesion .box-container{
+  margin: auto;
+  text-align: center;
+}
+
+.sesion .aviso{
+  text-align: center;
+  font-size: 16px;
+  color: var(--red2);
+}
+
+.sesion .box-container .heading{
+  color: var(--red);
+}
+
+.sesion form{
+  text-align:center;
+}
+
+
+.sesion form .campos{
+  margin: auto;
+  border-radius: 5px;
+  padding: 10px 38px;
+  background-color: var(--light-bg);
+  box-shadow: 0px 0px 2px 0.5px var(--light-color);
+
+}
+
+.btnsesion{
+   margin: auto;
+   margin-top: 1rem;
+   border-radius: .5rem;
+   background: var(--black);
+   cursor: pointer;
+   color: var(--light-bg);
+   padding: 1rem 3rem;
+   font-size: 1.7rem;
+   border: none;
+}
+
+.btnsesion:hover{
+  color: var(--light-bg);
+  background-color: var(--red);
+}
+
+.sesion .box-container .heading2{
+  color: var(--light-color);
+}
+
+.registrar{
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  background: var(--light-bg);
+  cursor: pointer;
+  color: var(--light-color);
+  padding: 1rem 4rem;
+  font-size: 1.7rem;
+  border: 1px var(--light-color) solid;
+}
+
+.registrar:hover{
+  color: var(--light-bg);
+  background-color: var(--red);
+  border: none;
+}
+
+.privi{
+  font-size: 20px;
+  color: var(--red);
+  vertical-align: middle;
+}
+
+.privi:hover{
+  font-size: 25px;
+  color: var(--black);
+  vertical-align: middle;
+}
+
+.sesion .logo img {
+  vertical-align: middle;
+}
+
+/* SESION .PHP / TERMINA */
+
+
+/* FORMULARIO.PHP / INICIA */
+
+.logo2{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.formulario{
+  margin: auto;
+  width: 600px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: var(--light-bg);
+}
+
+.formulario .obligatorio{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.formulario .campos{
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px var(--light-bg) solid;
+}
+
+.red{
+  color: var(--red);
+}
+
+.formulario .camposlargos{
+    width: 400px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px var(--light-bg) solid;
+}
+
+.formulario .btn{
+  border-radius: 8px;
+  width: 200px;
+  background-color: var(--black);
+  color: var(--light-bg);
+}
+
+.formulario .btn:hover{
+  width: 220px;
+  background-color: var(--red);
+}
+
+.formulario input:focus{
+  border: 1.5px var(--red) solid;
+ }
+ 
+/* FORMULARIO.PHP / FIN */
+
+
+
+/* ADMINISTRADOR.PHP / INICIA */
+
+.volver{
+  padding-top: 20px;
+  padding-right: 10px;
+  text-align: right;
+}
+.regresar{
+  padding: 10px 20px;
+  background-color: var(--light-bg);
+  color: var(--light-color);
+  border-radius: 3px;
+  font-size: 14px;
+  box-shadow: 0px 0px 1px 0.5px var(--light-color);
+}
+
+.admin{
+  text-align: center;
+}
+
+.admin span{
+  color: var(--red);
+}
+
+.regresar:hover{
+  padding: 12px 22px;
+  background-color: var(--red);
+  color: var(--light-bg);
+}
+
+.administrador{
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 70px;
+  margin-top: 50px;
+  width: 300px;
+  height: 450px;
+  text-align: center;
+  box-shadow: 0px 0px 3px 1px var(--light-color);
+
+  background-color: var(--light-bg);
+}
+
+
+.administrador .perfil{
+  width: 90px;
+  margin-top: 30px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px 1px var(--light-color);
+}
+
+.administrador .aviso{
+  text-align: center;
+  font-size: 16px;
+  color: var(--red2);
+}
+
+
+
+.administrador .admi{
+  text-align: left;
+  /* border: 1px red solid; */
+  padding-left: 40px;
+  font-size: 13px;
+}
+
+
+.administrador .admi span{
+  color: var(--red2);
+}
+
+.administrador .admi input{
+  margin-top: 5px;
+  border-radius: 2px;
+  width: 220px;
+  padding: 8px 10px ;
+}
+
+.administrador input:focus{
+ border: 1px var(--red) solid;
+}
+/* ADMINISTRADOR.PHP / FIN */
+
+
+
+
+
+/* PANEL USER.PHP - ADMINISTRADOR/ INICIO */
+
+.panelusuario {
+
+  margin-top: 20px;
+  background-color: var(--light-bg);
+  box-shadow: 0px 0px 2px 1px var(--light-color);
+  padding: 15px;
+}
+
+.panelusuario div{
+  display: inline-block;
+  width: 49%;
+  /* border: 1px red solid; */
+  vertical-align: middle;
+}
+
+.panelusuario .usuario{
+  padding-left: 70px;
+}
+
+.panelusuario .usuario span{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--red);
+}
+
+.panelusuario .usuario p{
+  font-size: 16px;
+  color: var(--black);
+}
+
+
+
+.panelusuario p{
+  text-align: left;
+  color: white;
+}
+
+.panelusuario a{
+  color: var(--black);
+  font-size: 16px;
+}
+
+.panelusuario a:hover {
+  font-weight: bold;
+  color: var(--red2);
+}
+
+.panelusuario .salir{
+  text-align: right;
+}
+
+.panelusuario img{
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-bottom: 6px;
+}
+
+.panel{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tablecotizacion .table{
+  margin: auto;
+  background-color: var(--light-bg);
+  padding: 20px 20px;
+  border-radius: 5px;
+}
+
+.tablecotizacion .table span{
+  font-weight: bold;
+  color: var(--red);
+}
+
+.tablecotizacion .table .campo1{
+  color: var(--red);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 80px;
+  /* border: 1px red solid; */
+}
+
+.tablecotizacion .table .campo3{
+  color: var(--red);
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 40px;
+  /* border: 1px red solid; */
+}
+
+.tablecotizacion .table .campo2{
+  color: var(--black);
+  font-size: 18px;
+  padding: 5px 30px;
+}
+
+.tablecotizacion table{
+  /* border: 1px red solid; */
+  width: 1600px;
+}
+
+.tablecotizacion table td{
+  border-radius: 3px;
+  text-align: center;
+  background-color: var(--white);
+}
+
+.tablecotizacion table img{
+  width: 300px;
+}
+
+.tablecotizacion .eliminar{
+  width: 64px;
+  vertical-align: middle;
+}
+
+
+
+ /* USADO SOLO EN PANEL DE ADMINISTRADOR */
+.tablecotizacion .table .campo4{
+  color: var(--red);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 10px;
+  /* border: 1px red solid; */
+}
+
+
+
+/* SALIR.PHP - ADMINISTRADOR/ INICIO */
+
+.salirphp{
+  margin-top: 335px;
+  margin-bottom: 335px;
+}
+
+/* SALIR.PHP - ADMINISTRADOR/ FIN */
+
+
+
+
+
+
+
+

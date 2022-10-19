@@ -139,7 +139,6 @@ include "footer.php"
 
    <!-- Prueba Git N#5 Creación de RAMA en VisualStudio -->
 
-
    <!-- Prueba Git N#6 Cambios en Rama Temp desde VS -->
 </body>
 </html>

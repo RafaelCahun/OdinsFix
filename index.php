@@ -134,5 +134,7 @@ include "footer.php"
    <!-- Prueba desde GitHub N#1 -->
 
    <!-- Prueba Git N#3 de rama MAIN(MASTER) -->
+
+   <!-- Prueba Git N#4 Terminal en VisualStudio -->
 </body>
 </html>

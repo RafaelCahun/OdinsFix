@@ -136,5 +136,8 @@ include "footer.php"
    <!-- Prueba Git N#3 de rama MAIN(MASTER) -->
 
    <!-- Prueba Git N#4 Terminal en VisualStudio -->
+
+
+   <!-- Prueba Git N#6 Cambios en Rama Temp desde VS -->
 </body>
 </html>

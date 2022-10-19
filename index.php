@@ -139,6 +139,6 @@ include "footer.php"
 
    <!-- Prueba Git N#5 Creación de RAMA en VisualStudio -->
 
-   <!-- Prueba Git N#6 Cambios en Rama Temp desde VS -->
+   <!-- Prueba Git N#6 Cambios en Rama Temp desde VS, esto va a crear un conflicto xd -->
 </body>
 </html>
